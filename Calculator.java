@@ -26,6 +26,7 @@ public class Calculator {
                 Result = numberOne - numberTwo;
             break;
             case "*":
+                if(numberTwo == 0 || numberOne == 0) return 0.0;
                 Result = numberOne * numberTwo;
             break;
             case "/":
@@ -38,11 +39,11 @@ public class Calculator {
       return Result;
     }
     public static void main(String[] str){
-       System.out.print( calculate(2,"+", 4));
-       System.out.print(calculate(6,"-", 1.5));          
-       System.out.print(calculate(-4,"*", 8));          
-       System.out.print(calculate(49,"/", -7));         
-       System.out.print( calculate(8,"m", 2));  
-       System.out.print( calculate(4,"/",0)); 
+       System.out.println( calculate(2,"+", 4));
+       System.out.println(calculate(6,"-", 1.5));          
+       System.out.println(calculate(-4,"*", 8));          
+       System.out.println(calculate(49,"/", -7));         
+       System.out.println( calculate(8,"m", 2));  
+       System.out.println( calculate(4,"/",0)); 
     }
 }
