@@ -19,20 +19,20 @@ public class Calculator {
     public static Double calculate(final double numberOne, final String operation, final double numberTwo){
       Double Result = null;
       switch(operation) {
-        case "+":
-        // code block
-        break;
-        case y:
-        // code block
-        break;
-        case "+":
-        // code block
-        break;
-        case "+":
-        // code block
-        break;
-        default:
-        // code block
-    }
+            case "+":
+                Result = numberOne + numberTwo;
+            break;
+            case "-":
+                Result = numberOne - numberTwo;
+            break;
+            case "*":
+            // code block
+            break;
+            case "/":
+            // code block
+            break;
+            default:
+
+      }
     }
 }
