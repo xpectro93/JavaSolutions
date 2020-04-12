@@ -8,10 +8,4 @@ isIsogram "Dermatoglyphics" == true
 isIsogram "aba" == false
 isIsogram "moOse" == false -- ignore letter case 
 */
-public class isograms {
-    public static boolean  isIsogram(String str) {
-       boolean answer;
 
-        return answer;
-    } 
-}
