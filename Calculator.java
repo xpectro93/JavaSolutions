@@ -29,10 +29,12 @@ public class Calculator {
                 Result = numberOne * numberTwo;
             break;
             case "/":
+                if(numberTwo == 0) return Result;
                 Result = numberOne / numberTwo;
             break;
             default:
                 return Result;
       }
+      return Result;
     }
 }
