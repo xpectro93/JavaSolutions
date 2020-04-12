@@ -32,7 +32,7 @@ public class Calculator {
             // code block
             break;
             default:
-
+                return Result;
       }
     }
 }
