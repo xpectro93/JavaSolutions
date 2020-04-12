@@ -26,10 +26,10 @@ public class Calculator {
                 Result = numberOne - numberTwo;
             break;
             case "*":
-            // code block
+                Result = numberOne * numberTwo;
             break;
             case "/":
-            // code block
+                Result = numberOne / numberTwo;
             break;
             default:
                 return Result;
