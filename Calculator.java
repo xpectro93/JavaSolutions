@@ -38,6 +38,11 @@ public class Calculator {
       return Result;
     }
     public static void main(String[] str){
-        System.out.print(calculate(-3,"*",9));
+       System.out.print( calculate(2,"+", 4));
+       System.out.print(calculate(6,"-", 1.5));          
+       System.out.print(calculate(-4,"*", 8));          
+       System.out.print(calculate(49,"/", -7));         
+       System.out.print( calculate(8,"m", 2));  
+       System.out.print( calculate(4,"/",0)); 
     }
 }
