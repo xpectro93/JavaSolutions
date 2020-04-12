@@ -37,4 +37,7 @@ public class Calculator {
       }
       return Result;
     }
+    public static void main(String[] str){
+        System.out.print(calculate(-3,"*",9));
+    }
 }
