@@ -10,10 +10,6 @@ Input => "1 shot, 5 beers, 2 shots, 1 glass of wine, 1 beer"
 Output => "10 glasses of water"
 */
 
-
-
-
-
 public class Drinkin {
     public String hydrate(String drinkString) {
         
