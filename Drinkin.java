@@ -23,6 +23,7 @@ class Drinkin {
             } 
             
         }
+        if (drinks == 1) return  drinks + " glass of water";
         return  drinks+ " glasses of water";
     }
     public static void main(String[] str){
