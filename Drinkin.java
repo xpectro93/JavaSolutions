@@ -9,13 +9,16 @@ Return a string suggesting how many glasses of water you should drink to not be 
 Input => "1 shot, 5 beers, 2 shots, 1 glass of wine, 1 beer"
 Output => "10 glasses of water"
 */
+class Drinkin {
+    //adding static makes it a regular function/ while not having static makes it a method to the class;
+    public static String hydrate(String drinkString) {
 
-public class Drinkin {
-    public String hydrate(String drinkString) {
-        
-        return "";
+        // use regex to take out all strings that aren't numbers
+        String cleanString = drinkString.replaceAll("[^0-9]+", " ");
+        return cleanString;
     }
     public static void main(String[] str){
-
+        String test = "1 shot, 5 beers, 2 shots, 1 glass of wine, 1 beer";
+        System.out.println(hydrate(test));
     };
 }
