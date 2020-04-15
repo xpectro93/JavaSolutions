@@ -11,7 +11,7 @@ class Kata {
         System.out.println(width / w);
         double r = width / w;
         double x =  r * h;
-    	return width + "x" + Math.round(x);
+    	return width + "x" + (int) Math.floor(x);
     }
     public static void main(String[] str){
         System.out.println("Its working");
