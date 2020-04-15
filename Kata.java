@@ -10,7 +10,7 @@ class Kata {
         int w = Integer.parseInt(dim.get(0));
         int h = Integer.parseInt(dim.get(1));
         double r = width / w;
-
+        System.out.print(r *  h);
     	return "dimensions";
     }
     public static void main(String[] str){
