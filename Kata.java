@@ -6,15 +6,16 @@ class Kata {
         String widthNHeight[] = ratio.split(":");
 	    List<String> dim = new ArrayList<String>(); 
         dim = Arrays.asList(widthNHeight);
-        int w = Integer.parseInt(dim.get(0));
-        int h = Integer.parseInt(dim.get(1));
-        int r = width / w;
-    	return width + "x" + r * h;
+        double w = Integer.parseInt(dim.get(0));
+        double h = Integer.parseInt(dim.get(1));
+        System.out.println(width / w);
+        double r = width / w;
+        double x =  r * h;
+    	return width + "x" + Math.round(x);
     }
     public static void main(String[] str){
         System.out.println("Its working");
-
         //expected value;
-        findScreenHeight(1024, "4:3");
+        findScreenHeight(1415, "4:3");
     }
 }
