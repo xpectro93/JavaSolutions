@@ -3,15 +3,13 @@
 import java.util.*;
 class Kata {
     public static String findScreenHeight(int width, String ratio) {
-        String dimensions;
         String widthNHeight[] = ratio.split(":");
 	    List<String> dim = new ArrayList<String>(); 
         dim = Arrays.asList(widthNHeight);
         int w = Integer.parseInt(dim.get(0));
         int h = Integer.parseInt(dim.get(1));
-        double r = width / w;
-        System.out.print(r *  h);
-    	return "dimensions";
+        int r = width / w;
+    	return width + "x" + r * h;
     }
     public static void main(String[] str){
         System.out.println("Its working");
