@@ -14,16 +14,32 @@ Examples
 import java.util.List;
 import java.util.Map;
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class MyLanguages {
   public static List<String> myLanguages(final Map<String, Integer> results) {
+    //create new ArrayList
     List<String> list= new ArrayList<String>();
+
+    //create forEach for Map
     for (Map.Entry<String, Integer> entry : results.entrySet())
+
+    //If value of key is greater than or equal to 60 
      if(entry.getValue()>= 60){
-       
+    
+      //adds to our string array
      list.add(entry.getKey());
      };
+
+     //import collections sort
+     Collections.sort(list, (a, b) -> { 
+              //use Integeger because our results are whole numbers. then we compare their values based on the strings we previously got
+              //we use the map get method to get the integer value, then based on that we sort.
+        return Integer.compare(results.get(b), results.get(a));
+
+     });
+     //return sorted arraylist
     return list;
   }
  
-};;
+};
