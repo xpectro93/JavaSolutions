@@ -12,12 +12,16 @@ Example
 public class HalvingSum {
     public static int halvingSum(int n) {
     
+    //var to store results
     int sum = 0;
+    //while loop that will stop once our number reacher 1 or less than 1;
     while(n >= 1){
+       // we add the number to the sum;
        sum +=n;
+       //divide number for next iteration;
        n = n / 2;
     }
-    
+        //return result
         return sum;
     }
     public static void main(String[] str){
