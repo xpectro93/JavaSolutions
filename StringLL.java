@@ -36,14 +36,27 @@ new Node(0, new Node(1, new Node(4, new Node(9, new Node(16)))))
 class StringLL {
 
   public static String stringify(Node list) {
+    //add output string;
     String chain = "";
+
+    //check if LL has a valid value, if it doesnt it returns a string of null;
     if(list == null)  return "null";
+
+    //set variable to keep track of our current node, this will help us traverse through problem;
     Node current = list;
+    
+    //we loop thoough our LL until our current is null;
     while(current != null){
+
+      //for every iteration of the LL we call on the Node's method to get our value;
       chain += current.getData() + " -> ";
+
+      //after getting out number value we set of current node to be our next one;
       current = current.getNext();
       
     }
+
+    //return output string;
     return chain + "null";
   }
 }
