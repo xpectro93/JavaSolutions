@@ -27,6 +27,11 @@ class Node {
         return next;
     }
 }
+
+new Node(0, new Node(1, new Node(4, new Node(9, new Node(16)))))
+... its string representation would be:
+
+"0 -> 1 -> 4 -> 9 -> 16 -> null"
 */
 class StringLL {
 
