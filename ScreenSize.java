@@ -1,7 +1,7 @@
 // https://www.codewars.com/kata/5bbd279c8f8bbd5ee500000f/train/java
 // Given an integer width and a string ratio written as WIDTH:HEIGHT, output the screen dimensions as a string written as WIDTHxHEIGHT.
 import java.util.*;
-class Kata {
+class ScreenSize {
     public static String findScreenHeight(int width, String ratio) {
 
         //split width on :
