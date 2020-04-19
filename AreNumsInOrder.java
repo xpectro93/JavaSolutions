@@ -23,11 +23,23 @@ isAscOrder(new int[]{9,8,7,6,5,4,3,2,1}) == false // numbers are in DESCENDING o
 public class AreNumsInOrder {
 
     public static boolean isAscOrder(int[] arr) {
-      // TODO
-      return [];
-    }
-    public static void main(String[] str) {
-
-    }
+        if(arr.length == 2) return true;
+        final boolean isUp = arr[0] > arr[1] ? false : true;
+        if(isUp){
+          for(int i= 0; i < arr.length - 1; i++){
+           if(arr[i] >= arr[i + 1]){
+             return false;
+           } 
+          }
+    
+        }else{
+         for(int i= 0; i < arr.length - 1; i++){
+           if(arr[i] <= arr[i + 1]){
+             return false;
+           } 
+          }
+        }
+        return true;
+      }
   
   }
