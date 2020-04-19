@@ -41,5 +41,10 @@ public class AreNumsInOrder {
         }
         return true;
       }
+      public static void main(){
+        int[] arrarr = new int[] {1, 2};
+         
+        System.out.println(isAscOrder(arrarr));
+      }
   
   }
