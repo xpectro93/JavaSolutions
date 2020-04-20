@@ -39,6 +39,7 @@ public class Troll {
         return out;
     }
     public static void main(String[] str){
-        System.out.print(disemvowel("This is working"));
+        System.out.print(disemvowel("This is WORKING"));
+        System.out.print(disemvowel("ADKSAKDJASLKJNMdlkjflskdafmfoweruwqkn"));
     }
 }
