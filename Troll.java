@@ -15,7 +15,9 @@ import java.util.HashSet;
 
 public class Troll {
     public static String disemvowel(String str) {
+        //create HashSet for o(1) lookup;
         HashSet<Character> vowels = new HashSet<Character>();
+        //NOTE TO SELF: Remember that '' are used to characters and "" are used for strings;
         vowels.add('a');
         vowels.add('e');
         vowels.add('i');
@@ -29,13 +31,13 @@ public class Troll {
         
         String out = "";
         for (int i = 0; i < str.length(); i++){
-
+            // loop through and if vowels set does not contain vowels add to output string
             if(!vowels.contains(str.charAt(i))){
                 out+=str.charAt(i);
             }
         }
         
-
+        //return output;
         return out;
     }
     public static void main(String[] str){
