@@ -14,6 +14,6 @@ public class DecTools {
         return numString.length();
     }
     public static void main (String[] str) {
-        System.out.println("This is wack, yo");
+        System.out.println(Digits(79898));
     };
   }
