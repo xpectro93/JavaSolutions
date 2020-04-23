@@ -7,8 +7,11 @@ For example, 9 is a single digit, 66 has 2 digits and 128685 has 6 digits. Be ca
 
 public class DecTools {
     public static int Digits(long n) {
+        //turn number into string
         String numString = Long.toString(n);
-      return numString.length();
+
+        //return the length of string;
+        return numString.length();
     }
     public static void main (String[] str) {
         System.out.println("This is wack, yo");
