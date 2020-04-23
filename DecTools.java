@@ -1,6 +1,6 @@
 public class DecTools {
     public static int Digits(long n) {
-        String numString = Integer.toString(n);
+        String numString = Long.toString(n);
       return numString.length();
     }
     public static void main (String[] str) {
