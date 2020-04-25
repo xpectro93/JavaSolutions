@@ -9,7 +9,7 @@ For example, capitalize("abcdef") = ['AbCdEf', 'aBcDeF']. See test cases for mor
 The input will be a lowercase string with no spaces.
  * 
  */
-
+import java.util.Arrays;
 class AltCap{
      public static String[] capitalize(String s){
         // Gorillaz - Do Ya Thing (2010)
@@ -31,8 +31,8 @@ class AltCap{
         return out;
     }
     public static void main(String[] str){
-        System.out.println(capitalize("whydoyouhateme"));
-        System.out.println(capitalize("wishyoucared"));
+        System.out.println(Arrays.toString(capitalize("whydoyouhateme")));
+        System.out.println(Arrays.toString(capitalize("wishyoucared")));
     }
     
 }
