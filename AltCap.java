@@ -12,22 +12,26 @@ The input will be a lowercase string with no spaces.
 import java.util.Arrays;
 class AltCap{
      public static String[] capitalize(String s){
-        // Gorillaz - Do Ya Thing (2010)
+        // create two strings
         String up  = "";
         String low = "";
         for(int i = 0; i < s.length(); i++){
           if(i % 2 == 0){
+            //evens where uppercase and lower
             up += Character.toUpperCase(s.charAt(i));
             low += Character.toLowerCase(s.charAt(i));
           }else{
+            //got odd indexes 
             up +=  Character.toLowerCase(s.charAt(i));
             low += Character.toUpperCase(s.charAt(i));
           }
         
         }
+        //create Array with the length of 2 for the up and low; inserted to new Array
         String[] out =  new String[2];
         out[0] = up;
         out[1] = low;
+        //return answer;
         return out;
     }
     public static void main(String[] str){
