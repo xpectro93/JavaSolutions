@@ -10,9 +10,29 @@ The input will be a lowercase string with no spaces.
  * 
  */
 
-class Solution{
-    public static String[] capitalize(String s){
+class AltCap{
+     public static String[] capitalize(String s){
         // Gorillaz - Do Ya Thing (2010)
-        return new String[2];
+        String up  = "";
+        String low = "";
+        for(int i = 0; i < s.length(); i++){
+          if(i % 2 == 0){
+            up += Character.toUpperCase(s.charAt(i));
+            low += Character.toLowerCase(s.charAt(i));
+          }else{
+            up +=  Character.toLowerCase(s.charAt(i));
+            low += Character.toUpperCase(s.charAt(i));
+          }
+        
+        }
+        String[] out =  new String[2];
+        out[0] = up;
+        out[1] = low;
+        return out;
     }
+    public static void main(String[] str){
+        System.out.println(capitalize("whydoyouhateme"));
+        System.out.println(capitalize("wishyoucared"));
+    }
+    
 }
