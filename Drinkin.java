@@ -15,14 +15,16 @@ class Drinkin {
     public static String hydrate(String drinkString) {
         int drinks = 0;
         for(int i=0;i<drinkString.length();i++){
+            // turn value into boolean
             boolean current = Character.isDigit(drinkString.charAt(i));
-
+            //if curren is truth add to drinks
             if(current){
                int toNumber = Character.getNumericValue(drinkString.charAt(i));
                 drinks +=toNumber;
             } 
             
         }
+        //change text in case of single drink
         if (drinks == 1) return  drinks + " glass of water";
         return  drinks+ " glasses of water";
     }
